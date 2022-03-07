@@ -15,7 +15,7 @@ public class MainApp {
 
         MySpringDecoderBeanWithDependency test = (MySpringDecoderBeanWithDependency) factory.getBean("MySpringDecoderBeanWithDependency");
 
-        test.run("TextoCodificado");
-
+        //Colocar texto sin espacios y catacteres especiales
+        test.run("CodigoSecreto");
     }
 }

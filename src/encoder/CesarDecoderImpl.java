@@ -26,9 +26,6 @@ public class CesarDecoderImpl implements Decoder{
         List<String> textoEncriptado = new ArrayList<String>();
         String result;
 
-        //Pasar texto ingresaso a upper case
-        System.out.println(textoToChars);
-
         for(int i=0;i<textoToChars.size();i++){
             int indiceRefChar = abecedario.indexOf(textoToChars.get(i).toString());
             textoEncriptado.add(abecedario_reordenado.get(indiceRefChar));
@@ -48,9 +45,6 @@ public class CesarDecoderImpl implements Decoder{
         List<String> textoDesencriptado = new ArrayList<String>();
         String result;
 
-        //Pasar texto ingresaso a upper case
-        System.out.println(textoToChars);
-
         for(int i=0;i<textoToChars.size();i++){
             int indiceRefChar = abecedario_reordenado.indexOf(textoToChars.get(i).toString());
             textoDesencriptado.add(abecedario.get(indiceRefChar));
@@ -67,8 +61,6 @@ public class CesarDecoderImpl implements Decoder{
         //Para posteriormente solo recorrer indices.
         this.abecedario_reordenado.addAll(abecedario.subList(posicion,abecedario.size()));
         this.abecedario_reordenado.addAll(abecedario.subList(0,posicion));
-        System.out.println(abecedario);
-        System.out.println(abecedario_reordenado);
     }
 
 }
